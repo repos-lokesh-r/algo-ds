@@ -38,6 +38,27 @@ class Node:
 
         return array
 
+# Recursive Solution
+# class Node:
+    
+#     def __init__(self, name):
+#         self.children = []
+#         self.name = name
+
+#     def add_child(self, child):
+#         self.children.append(Node(child))
+#         return self
+
+#     def deapth_first_search(self, array):
+#         stack = [self]
+
+#         while stack:
+#             current_node = stack.pop()
+#             array.append(current_node.name)
+#             stack.extend(current_node.children[::-1])
+
+#         return array
+
 
 class TestCase(unittest.TestCase):
     def test(self):
